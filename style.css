@@ -1,50 +1,169 @@
 body {
-	margin: 5.75vh 7.5vw;
-	padding: .25vh .5vw;
+	-webkit-font-smoothing: subpixel-antialised;
+	background-color: rgba(0,0,0,.8);
+	background-image: none;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	color: #232323;
+	display:block;
 	font-family: 'Palatino Linotype', 'Georgia', Times;
 	font-size: 12.5pt;
+	padding: 0;
+	margin: 0;
 }
 
-h1,h2,h3, h4, a {
+.outer-wrapper {
+	padding: 0;
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+	box-shadow: 0 0 8px rgba(0,0,0, .1), 0 8px rgba(0,0,0,.8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .1) 0 8px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .1) 0 8px rgba(0, 0, 0, .4);
+}
+
+.wrapper {
+	background-color: #fff;
+	clear:both;
+	padding: 0;
+	position: relative;
+}
+
+h1, h2, h3, h4, a {
 	font-family: Verdana;
 }
 
-a {
-	color: #208dee;
-	font-size: .85em;
+h1, h4 {
+	margin: 0 0 0 0;
+	display: inline-block;
+}
+
+h2, article {
+	padding: 1vh 0 0 5vw;
+}
+
+
+section {
+	height: 350px;
+}
+
+span {
+	color: hsla(90, 4%, 45%, 1.0);
+}
+
+hr {
+	color: transparent;
+	background-color: #eee;
+	height: 1px;
+	border: 0;
+}
+
+/* Header */
+.main-image {
+/*	background: url('images/sunset.jpg') no-repeat;
+	background-size: cover;*/
+	overflow: hidden;
+	height:400px;
+	display: block;
+	width:1110px;
+	position:relative;
 }
 
 header {
-	padding-bottom: 1.5vh;
+	max-width: 95%;
+	font-size: 16pt;
 }
 
-header nav {
-	display: inline;
-	padding: 8px 8px 10px 10px;
-	background-color: hsla(90, 4%, 72%, .1);
+header section {
+	display: inline-block;
+	float: left;
+	padding: 14vh 0 0 5vw;
 }
-header nav a {
-	padding-right: .6vw;
+
+header section img {
+	display: inline-block;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	max-height: 12vh;
+	box-shadow: 0 0 2px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 2px rgba(0,0,0,.5);
+	margin-right: 1vw;
+}
+
+header aside {
+	float: right;
+}
+
+nav {
+	display:block;
+}
+
+header .site-nav {
+	padding: 1vh 0;
+}
+
+header .site-nav a {
 	box-sizing: border-box;
+	padding: 6px 10px;
+	margin: 0 10px 0 0;
+	text-align: center;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	moz-border-radius: 5px;
+	background: #cdd;
+	color: darkblue;
+	font-size: 12pt;
+	border-bottom: 1px solid #689;
+	text-decoration: none;
 }
-span {
-	font-size: 1.05em;
-	color: hsla(90, 4%, 45%, 1.0);
+
+header .contact img {
+	margin-top: 53vh;
 }
-hr {
-	margin-top: 5%;
-	max-width: 70%;
+
+.contact img {
+	box-sizing: border-box;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	max-height: 40px;
+}
+
+/* End of Header */
+
+#education img, #technical img, #interests img, #projects img {
+	height: 170px;
+	float:right;
+	position: absolute;
+	right: 50px;
+}
+
+#interests img {
+	height: 220px;
+	border-radius: 5px;
+	right: 100px;
+}
+
+#projects img {
+	height: 220px;
+	right: 100px;
 }
 
 article {
-	margin-left: 1.2vw;
+	display: inline-block;
 }
 
-figure img {
-	max-height:20%;
+/* Footer */
+
+footer {
+	text-align: center;
+	padding-bottom: 10px;
 }
-footer nav img {
-	max-height: 50px;
-	box-sizing: border-box;
-	margin: .7vw;
+
+footer .contact img {
+	padding-top: 5px;
+	max-height: 100px;
 }
